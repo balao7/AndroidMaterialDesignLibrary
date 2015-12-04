@@ -1,0 +1,135 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <!-- Base.Widget.AppCompat.Toolbar.Button.Navigation -->
+
+    <style name="AppTheme" parent="@style/App.Base.Light.Theme"></style>
+    
+    <!-- Light Base Theme -->
+    <style name="App.Base.Light.Theme" parent="Material.Light.Theme"></style>
+    
+    <!-- Dark Base Theme -->
+    <style name="App.Base.Dark.Theme" parent="Material.Dark.Theme"></style>
+	
+    <!-- Material Light Theme style -->
+    <style name="Material.Light.Theme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="textLeftSpacing">@dimen/spacing_xlarge</item>
+        <item name="android:actionBarSize">@dimen/action_bar_height</item>
+        <item name="android:windowContentOverlay">@drawable/toolbar_shadow</item>
+        <!-- android transitions -->
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowAllowEnterTransitionOverlap">true</item>
+        <item name="android:windowAllowReturnTransitionOverlap">true</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:statusBarColor">@android:color/black</item>
+        <item name="actionBarOverlayTheme">@style/ActionBarThemeOverlay</item>
+        <item name="actionBarPopupOverlayTheme">@style/ActionBarPopupThemeOverlay</item>
+        <item name="drawerArrowStyle">@style/DrawerArrow.Material.Style</item>
+    </style>
+    
+    <!-- Material Dark Theme style -->
+     <style name="Material.Dark.Theme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="textLeftSpacing">@dimen/spacing_xlarge</item>
+        <item name="android:actionBarSize">@dimen/action_bar_height</item>
+        <item name="android:windowContentOverlay">@drawable/toolbar_shadow</item>
+        <!-- android transitions -->
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowAllowEnterTransitionOverlap">true</item>
+        <item name="android:windowAllowReturnTransitionOverlap">true</item>
+        <item name="drawerArrowStyle">@style/DrawerArrow.Material.Style</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="actionBarOverlayTheme">@style/ActionBarThemeOverlay</item>
+        <item name="actionBarPopupOverlayTheme">@style/ActionBarPopupThemeDarkOverlay</item>
+    </style>
+    
+     <!-- Toolbar Theme -->
+     <style name="Widget.Toolbar.Theme" parent="@style/Widget.AppCompat.Toolbar">
+         <item name="android:elevation">@dimen/elevation_low</item>
+        <item name="android:paddingLeft">@dimen/no_spacing</item>
+        <item name="android:paddingRight">@dimen/no_spacing</item>
+        <item name="contentInsetStart">@dimen/spacing_xlarge</item>
+    </style>
+
+    <!-- Toolbar Theme Overlay --> <!-- @style/Base.ThemeOverlay.AppCompat.Light -->
+    <style name="ActionBarThemeOverlay" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:textColorPrimary">?attr/titleTextColor</item>
+        <item name="android:textColor">?attr/titleTextColor</item>
+    </style>
+    
+    <!-- Toolbar popup Theme Overlay --> <!-- @style/Base.ThemeOverlay.AppCompat.Light -->
+    <style name="ActionBarPopupThemeOverlay" parent="@style/ThemeOverlay.AppCompat.Light">
+        <item name="android:textColorPrimary">?attr/actionBarMenuTextColor</item>
+        <item name="android:textColor">?attr/actionBarMenuTextColor</item>
+        <item name="android:background">?attr/actionBarMenuColor</item>
+    </style>
+    
+     <!-- Toolbar popup Theme Dark Overlay --> <!-- @style/Base.ThemeOverlay.AppCompat.Light -->
+    <style name="ActionBarPopupThemeDarkOverlay" parent="@style/ThemeOverlay.AppCompat.Dark">
+        <item name="android:textColorPrimary">?attr/actionBarMenuTextColor</item>
+        <item name="android:textColor">?attr/actionBarMenuTextColor</item>
+        <item name="android:background">?attr/actionBarMenuColor</item>
+    </style>
+    
+    <!-- Drawer Arrow style -->
+    <style name="DrawerArrow.Material.Style" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@android:color/white</item>
+    </style>
+    
+    <!-- Material Drawable Ripple Effects -->
+    <style name="Material.Drawable.Ripple" parent="">
+        <item name="rd_enable">true</item>
+        <item name="rd_inInterpolator">@android:anim/decelerate_interpolator</item>
+        <item name="rd_outInterpolator">@android:anim/decelerate_interpolator</item>
+        <item name="rd_maskType">rectangle</item>
+        <item name="rd_cornerRadius">2dp</item>
+        <item name="rd_padding">0dp</item>
+        <item name="rd_delayClick">none</item>
+    </style>
+    
+    <style name="Material.Drawable.Ripple.Touch" parent="Material.Drawable.Ripple">
+        <item name="rd_backgroundColor">#26CCCCCC</item>
+        <item name="rd_backgroundAnimDuration">200</item>
+        <item name="rd_maxRippleRadius">48dp</item>
+        <item name="rd_rippleColor">#19CCCCCC</item>
+        <item name="rd_rippleAnimDuration">300</item>
+        <item name="rd_rippleType">touch</item>
+    </style>
+    
+    <style name="Material.Drawable.Ripple.Touch.Light" parent="Material.Drawable.Ripple.Touch">
+        <item name="rd_backgroundColor">#33999999</item>
+        <item name="rd_rippleColor">#33999999</item>
+        <item name="android:text">@android:color/white</item>
+    </style>
+    <!-- Material Drawable Ripple Effects Ends -->
+    
+    <!-- Material CheckBox Style -->
+    <style name="Material.Drawable.CheckBox" parent="">
+        <item name="checkbox_width">32dp</item>
+        <item name="checkbox_height">32dp</item>
+        <item name="checkbox_boxSize">20dp</item>
+        <item name="checkbox_cornerRadius">2dp</item>
+        <item name="checkbox_strokeSize">2dp</item>
+        <item name="checkbox_animDuration">@android:integer/config_mediumAnimTime</item>
+    </style>
+    <!-- Material CheckBox Style Ends -->
+
+	<!-- Material RadioButton Style -->
+	<style name="Material.Drawable.RadioButton" parent="">
+        <item name="radiobutton_width">32dp</item>
+        <item name="radiobutton_height">32dp</item>
+        <item name="radiobutton_strokeSize">2dp</item>
+        <item name="radiobutton_radius">10dp</item>
+        <item name="radiobutton_innerRadius">5dp</item>
+        <item name="radiobutton_animDuration">@android:integer/config_mediumAnimTime</item>
+    </style>
+	<!-- Material RadioButton Style Ends -->
+</resources>

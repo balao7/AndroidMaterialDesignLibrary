@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:drawable="@drawable/bg_bt_raise"></item>
+    <item android:id="@+id/shape_bacground">
+        <shape android:shape="rectangle" >
+            <corners
+                android:bottomLeftRadius="@dimen/default_radius"
+                android:bottomRightRadius="@dimen/default_radius"
+                android:topLeftRadius="@dimen/default_radius"
+                android:topRightRadius="@dimen/default_radius" />
+            <stroke android:color="@android:color/transparent" />
+        </shape>
+    </item>
+
+</layer-list>

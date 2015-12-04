@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+	<!-- Icon TextView Attribute -->
+    <declare-styleable name="IconTextView">
+        <attr name="textIconSize" format="float" />
+        <attr name="textIconColor" format="color" />
+        <attr name="textIcon" format="string" />
+    </declare-styleable>    
+    
+</resources>

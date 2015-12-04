@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- Light Base Theme -->
+    <style name="App.Base.Light.Theme" parent="Material.Light.Theme"></style>
+    
+    <!-- Dark Base Theme -->
+    <style name="App.Base.Dark.Theme" parent="Material.Dark.Theme"></style>
+    
+</resources>

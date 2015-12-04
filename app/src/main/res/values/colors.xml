@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="shadow_gradient_start">#50000000</color>
+    <color name="shadow_gradient_light_start">#30000000</color>
+    <color name="shadow_gradient_end">#88333333</color>
+    <color name="text_hint_color">#afafaf</color>
+    <color name="editTextColor">#3f51b5</color>
+    <color name="grey">#8f8e8f</color>
+    <color name="default_blue">#ffa726</color>
+
+</resources>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- Toolbar Values & Overlay attr -->
+    <!-- <attr name="titleTextColor" format="reference|color"/> -->
+    <attr name="actionBarNavigationIcon" format="reference"/>
+    <attr name="textLeftSpacing" format="reference"/>
+    <attr name="iconColor" format="reference|color"/>
+    <attr name="actionBarOverlayTheme" format="reference"/>
+    <attr name="actionBarPopupOverlayTheme" format="reference"/>
+    <attr name="actionBarMenuColor" format="reference|color"/>
+    <attr name="actionBarMenuTextColor" format="reference|color"/>
+    <attr name="tabTextColor" format="reference|color"/>
+    <attr name="tabTextSize" format="reference|dimension|integer"/>
+
+    <!-- Background layout color -->
+    <attr name="windowLayout_spacing_style" format="reference" />
+    <attr name="windowLayout_no_spacing_style" format="reference" />
+    <attr name="windowBackgroundColor" format="color" />
+
+    <declare-styleable name="LayoutStyle"></declare-styleable>
+
+    <attr name="MaterialeditTextColor" format="color" />
+    <attr name="textHintColor" format="color" />
+    
+    <!-- Ripple view att -->
+    
+    <declare-styleable name="RippleView">
+        <attr name="rd_style" format="reference"/>   
+        <attr name="rd_enable" format="boolean"/>
+    </declare-styleable> 
+    
+    <declare-styleable name="FloatButton">
+        <attr name="iconDrawable" format="reference"/>
+        <attr name="animate" format="boolean"/>  
+    </declare-styleable> 
+    
+	<declare-styleable name="RippleDrawable">
+        <attr name="rd_backgroundColor" format="reference|color"/>
+        <attr name="rd_backgroundAnimDuration" format="reference|integer"/>        
+        <attr name="rd_maxRippleRadius" format="reference|dimension|integer">
+            <enum name="match_view" value="0x00000000" />
+        </attr>
+        <attr name="rd_alpha" format="float" />
+        <attr name="rd_rippleColor" format="reference|color"/>
+        <attr name="rd_rippleAnimDuration" format="reference|integer"/>       
+        <attr name="rd_inInterpolator" format="reference"/>   
+        <attr name="rd_outInterpolator" format="reference"/>   
+        <attr name="rd_maskType" format="integer">
+            <enum name="rectangle" value="0x00000000" />
+	        <enum name="oval" value="0x00000001" />
+        </attr>
+        <attr name="rd_rippleType" format="integer">
+            <enum name="touch" value="0x00000000" />
+	        <enum name="wave" value="0x00000001" />
+        </attr>
+        <attr name="rd_buttonType" format="integer">
+            <enum name="flatbutton" value="0x00000000" />
+	        <enum name="paperbutton" value="0x00000001" />
+        </attr>
+        <attr name="rd_cornerRadius" format="reference|dimension"/>
+        <attr name="rd_topLeftCornerRadius" format="reference|dimension"/>
+        <attr name="rd_topRightCornerRadius" format="reference|dimension"/>
+        <attr name="rd_bottomLeftCornerRadius" format="reference|dimension"/>
+        <attr name="rd_bottomRightCornerRadius" format="reference|dimension"/>
+        <attr name="rd_padding" format="reference|dimension"/>
+        <attr name="rd_leftPadding" format="reference|dimension"/>
+        <attr name="rd_topPadding" format="reference|dimension"/>
+        <attr name="rd_rightPadding" format="reference|dimension"/>
+        <attr name="rd_bottomPadding" format="reference|dimension"/>
+        <attr name="rd_delayClick" format="integer">
+            <enum name="none" value="0x00000000" />
+            <enum name="untilRelease" value="0x00000001" />
+            <enum name="afterRelease" value="0x00000002" />
+        </attr>
+    </declare-styleable> 
+    
+	<!-- CheckBox attr -->
+	<declare-styleable name="CheckBoxDrawable">
+        <attr name="checkbox_width" format="reference|dimension"/>
+        <attr name="checkbox_height" format="reference|dimension"/>
+        <attr name="checkbox_boxSize" format="reference|dimension"/>
+        <attr name="checkbox_cornerRadius" format="reference|dimension"/>
+        <attr name="checkbox_strokeSize" format="reference|dimension"/>
+        <attr name="checkbox_strokeColor" format="reference|color"/>
+        <attr name="checkbox_tickColor" format="reference|color"/>
+        <attr name="checkbox_animDuration" format="reference|integer"/>
+    </declare-styleable>
+	<!-- CheckBox attr Ends -->
+	
+	<!-- RadioButton attr -->
+	<declare-styleable name="RadioButtonDrawable">
+        <attr name="radiobutton_width" format="reference|dimension"/>
+        <attr name="radiobutton_height" format="reference|dimension"/>
+        <attr name="radiobutton_strokeSize" format="reference|dimension"/>
+        <attr name="radiobutton_radius" format="reference|dimension"/>
+        <attr name="radiobutton_innerRadius" format="reference|dimension"/>
+        <attr name="radiobutton_strokeColor" format="reference|color"/>
+        <attr name="radiobutton_animDuration" format="reference|integer"/>
+    </declare-styleable>
+	<!-- RadioButton attr Ends -->
+
+</resources>
